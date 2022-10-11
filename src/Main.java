@@ -7,6 +7,16 @@ public class Main {
         return 3.14159265359;
     }
 
+    private static void usoWhile() {
+        int i = 0;
+        Scanner entrada = new Scanner(System.in);
+        while (i != -20) {
+            System.out.println(i);
+            System.out.println("Deseja continuar? (-20 para encerrar)");
+            i = entrada.nextInt();
+        }
+    }
+
     private static void impressora(String impressao) {
         System.out.println(impressao);
     }
@@ -19,9 +29,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
+        usoWhile();
         Desafio d = new Desafio();
         d.quadrado();
-
 
         int numero;
         int retorno;
