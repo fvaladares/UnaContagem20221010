@@ -18,6 +18,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+
+        Desafio d = new Desafio();
+        d.quadrado();
+
+
         int numero;
         int retorno;
         System.out.println("Por favor, informe um número" +
